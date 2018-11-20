@@ -1,5 +1,5 @@
 {
-  "name": "alexacrm/dynamics-webapi-toolkit",
+  "name": "surveygizmo/dynamics-webapi-toolkit",
   "description": "Web API toolkit for Microsoft Dynamics 365 and Dynamics CRM",
   "type": "library",
   "license": "MIT",
@@ -7,11 +7,15 @@
     {
       "name": "AlexaCRM",
       "email": "info@alexacrm.com"
+    },
+    {
+      "name": "SurveyGizmo",
+      "email": "compliance@surveygizmo.com"
     }
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.0",
+    "php": ">=5.6",
     "guzzlehttp/guzzle": "~6",
     "psr/log": "^1.0",
     "psr/cache": "^1.0",

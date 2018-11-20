@@ -22,17 +22,45 @@ The current release of the library does not support the following features (supp
 
 ### Prerequisites
 
-The main requirement is PHP 7.0 or later. cURL is recommended but is not required. [Composer](https://getcomposer.org/) is required to install the toolkit and its dependencies.
+The main requirement is PHP 5.6 or later. cURL is recommended but is not required. [Composer](https://getcomposer.org/) is required to install the toolkit and its dependencies.
 
 ### Installing
 
 ```
-$ composer require alexacrm/dynamics-webapi-toolkit:dev-master
+$ composer require surveygizmo/dynamics-webapi-toolkit:dev-master
 ```
 
 ### Consuming
 
-See the [Tutorial](https://github.com/AlexaCRM/dynamics-webapi-toolkit/wiki/Tutorial) to learn how to consume the library.
+Example:
+```
+<?php
+
+error_reporting(E_ALL & ~ E_NOTICE);
+ini_set('display_errors', 1);
+
+require_once 'vendor/autoload.php';
+
+$client = \AlexaCRM\WebAPI\ClientFactory::createOnlineClient(
+    'https://example.crm.dynamics.com',
+    '5abff56d-ffa4-42ca-bd21-91d11b5754ff',
+    '3kffsdfIwwr23rj2r1397kwegewgJGtwi2wejgewitw='
+);
+
+$contact = new \AlexaCRM\Xrm\Entity( 'contact' );
+$contact['firstname'] = 'Nancy';
+$contact['lastname'] = 'Anderson';
+$contact['emailaddress1'] = 'someone_c@example.com';
+
+$contactId = $client->Create( $contact );
+
+var_dump($contactId);
+var_dump($contact);
+```
+
+If you have issues with authentication, you may need to consult another guide to properly [configure Dynamics 365 with OpenID Connect and Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-openid-connect-code).
+
+See the [Tutorial](https://github.com/AlexaCRM/dynamics-webapi-toolkit/wiki/Tutorial) to learn more about how to consume the library.
 
 ## Built With
 
@@ -41,7 +69,7 @@ See the [Tutorial](https://github.com/AlexaCRM/dynamics-webapi-toolkit/wiki/Tuto
 
 ## Versioning
 
-Currently the toolkit code is not tagged. Once the library is stable API-wise, we will use [SemVer](http://semver.org/) for versioning. 
+Currently the toolkit code is not tagged. Once the library is stable API-wise, we will use [SemVer](http://semver.org/) for versioning.
 
 ## License
 
