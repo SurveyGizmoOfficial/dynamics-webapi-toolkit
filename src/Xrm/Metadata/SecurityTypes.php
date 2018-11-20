@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Enum\FlaggedEnum;
+use SurveyGizmo\Dynamics\Enum\FlaggedEnum;
 
 /**
  * Describes the security type for the relationship.

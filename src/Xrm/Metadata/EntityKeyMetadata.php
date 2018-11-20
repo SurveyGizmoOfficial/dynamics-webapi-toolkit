@@ -18,12 +18,12 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Xrm\EntityKeyIndexStatus;
-use AlexaCRM\Xrm\EntityReference;
-use AlexaCRM\Xrm\Label;
-use AlexaCRM\Xrm\ManagedProperty;
+use SurveyGizmo\Dynamics\Xrm\EntityKeyIndexStatus;
+use SurveyGizmo\Dynamics\Xrm\EntityReference;
+use SurveyGizmo\Dynamics\Xrm\Label;
+use SurveyGizmo\Dynamics\Xrm\ManagedProperty;
 
 /**
  * Represents the entity key metadata.

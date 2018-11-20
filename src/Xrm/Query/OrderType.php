@@ -19,9 +19,9 @@
  *
  */
 
-namespace AlexaCRM\Xrm\Query;
+namespace SurveyGizmo\Dynamics\Xrm\Query;
 
-use AlexaCRM\Enum\ChoiceEnum;
+use SurveyGizmo\Dynamics\Enum\ChoiceEnum;
 
 /**
  * Contains the possible values for the order type.

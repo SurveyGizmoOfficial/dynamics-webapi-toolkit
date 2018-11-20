@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
-use AlexaCRM\Enum\ChoiceEnum;
+use SurveyGizmo\Dynamics\Enum\ChoiceEnum;
 
 /**
  * Represents the enumerator for the entity key status when the index creation job is in progress.

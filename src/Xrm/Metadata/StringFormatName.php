@@ -18,7 +18,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
 /**
  * Specifies the format of a StringAttributeMetadata attribute using the FormatName property.

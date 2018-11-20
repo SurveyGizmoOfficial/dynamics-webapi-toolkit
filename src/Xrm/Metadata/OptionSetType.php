@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Enum\ChoiceEnum;
+use SurveyGizmo\Dynamics\Enum\ChoiceEnum;
 
 /**
  * Indicates the type of option set.

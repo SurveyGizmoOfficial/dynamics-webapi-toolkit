@@ -19,23 +19,23 @@
  *
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
-use AlexaCRM\WebAPI\OData\AuthenticationException;
-use AlexaCRM\WebAPI\OData\InaccessibleMetadataException;
-use AlexaCRM\WebAPI\OData\ODataException;
-use AlexaCRM\WebAPI\OData\EntityNotSupportedException;
-use AlexaCRM\Xrm\ColumnSet;
-use AlexaCRM\Xrm\Entity;
-use AlexaCRM\Xrm\EntityCollection;
-use AlexaCRM\Xrm\EntityReference;
-use AlexaCRM\Xrm\IOrganizationService;
-use AlexaCRM\Xrm\Query\FetchExpression;
-use AlexaCRM\Xrm\Query\PagingInfo;
-use AlexaCRM\Xrm\Query\QueryBase;
-use AlexaCRM\Xrm\Query\QueryByAttribute;
-use AlexaCRM\Xrm\Relationship;
-use AlexaCRM\WebAPI\OData\Client as ODataClient;
+use SurveyGizmo\Dynamics\WebAPI\OData\AuthenticationException;
+use SurveyGizmo\Dynamics\WebAPI\OData\InaccessibleMetadataException;
+use SurveyGizmo\Dynamics\WebAPI\OData\ODataException;
+use SurveyGizmo\Dynamics\WebAPI\OData\EntityNotSupportedException;
+use SurveyGizmo\Dynamics\Xrm\ColumnSet;
+use SurveyGizmo\Dynamics\Xrm\Entity;
+use SurveyGizmo\Dynamics\Xrm\EntityCollection;
+use SurveyGizmo\Dynamics\Xrm\EntityReference;
+use SurveyGizmo\Dynamics\Xrm\IOrganizationService;
+use SurveyGizmo\Dynamics\Xrm\Query\FetchExpression;
+use SurveyGizmo\Dynamics\Xrm\Query\PagingInfo;
+use SurveyGizmo\Dynamics\Xrm\Query\QueryBase;
+use SurveyGizmo\Dynamics\Xrm\Query\QueryByAttribute;
+use SurveyGizmo\Dynamics\Xrm\Relationship;
+use SurveyGizmo\Dynamics\WebAPI\OData\Client as ODataClient;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 
@@ -172,8 +172,8 @@ class Client implements IOrganizationService {
     /**
      * Executes a function or action formed as a request. Not implemented.
      *
-     * Use \AlexaCRM\WebAPI\OData\Client::ExecuteFunction() and \AlexaCRM\WebAPI\OData\Client::ExecuteAction() instead.
-     * Access to \AlexaCRM\WebAPI\OData\Client is provided via Client::getClient().
+     * Use \SurveyGizmo\Dynamics\WebAPI\OData\Client::ExecuteFunction() and \SurveyGizmo\Dynamics\WebAPI\OData\Client::ExecuteAction() instead.
+     * Access to \SurveyGizmo\Dynamics\WebAPI\OData\Client is provided via Client::getClient().
      *
      * @param $request
      */

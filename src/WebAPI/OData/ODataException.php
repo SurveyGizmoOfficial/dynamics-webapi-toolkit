@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
 use GuzzleHttp\Exception\RequestException;
 

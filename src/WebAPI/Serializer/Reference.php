@@ -18,7 +18,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\WebAPI\Serializer;
+namespace SurveyGizmo\Dynamics\WebAPI\Serializer;
 
 /**
  * Describes how a certain piece of data should be transformed type-wise.

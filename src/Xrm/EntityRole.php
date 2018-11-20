@@ -19,9 +19,9 @@
  *
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
-use AlexaCRM\Enum\ChoiceEnum;
+use SurveyGizmo\Dynamics\Enum\ChoiceEnum;
 
 /**
  * Contains values to indicate the role the entity plays in a relationship.

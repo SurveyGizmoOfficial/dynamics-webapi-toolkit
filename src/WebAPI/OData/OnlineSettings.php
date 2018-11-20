@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
 /**
  * Contains Dynamics 365 (online) credentials.

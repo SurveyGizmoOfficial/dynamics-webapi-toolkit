@@ -18,7 +18,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
 /**
  * Contains a collection of translations for a label.

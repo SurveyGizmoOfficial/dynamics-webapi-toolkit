@@ -18,7 +18,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
 /**
  * Represents a managed property.

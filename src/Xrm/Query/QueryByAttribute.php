@@ -19,9 +19,9 @@
  *
  */
 
-namespace AlexaCRM\Xrm\Query;
+namespace SurveyGizmo\Dynamics\Xrm\Query;
 
-use AlexaCRM\Xrm\ColumnSet;
+use SurveyGizmo\Dynamics\Xrm\ColumnSet;
 
 /**
  * Contains a query that is expressed as a set of attribute and value pairs.

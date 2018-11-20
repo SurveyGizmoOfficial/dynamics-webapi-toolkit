@@ -19,11 +19,11 @@
  *
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
-use AlexaCRM\WebAPI\OData\Annotation;
-use AlexaCRM\Xrm\Entity;
-use AlexaCRM\Xrm\EntityReference;
+use SurveyGizmo\Dynamics\WebAPI\OData\Annotation;
+use SurveyGizmo\Dynamics\Xrm\Entity;
+use SurveyGizmo\Dynamics\Xrm\EntityReference;
 
 /**
  * A helper library to facilitate serialization of Xrm objects for Web API.

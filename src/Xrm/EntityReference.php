@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
 /**
  * Identifies a record in Dynamics 365.

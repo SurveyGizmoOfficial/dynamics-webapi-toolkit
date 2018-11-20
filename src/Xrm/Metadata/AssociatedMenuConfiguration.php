@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Xrm\Label;
+use SurveyGizmo\Dynamics\Xrm\Label;
 
 /**
  * Defines how the associated records are displayed for an entity relationship.

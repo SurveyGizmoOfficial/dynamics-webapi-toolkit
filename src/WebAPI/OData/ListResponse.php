@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
 /**
  * Represents a raw object response from an OData RetrieveMultiple-like request.

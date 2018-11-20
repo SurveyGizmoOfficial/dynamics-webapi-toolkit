@@ -19,10 +19,10 @@
  *
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
-use AlexaCRM\WebAPI\OData\OnlineAuthMiddleware;
-use AlexaCRM\WebAPI\OData\OnlineSettings;
+use SurveyGizmo\Dynamics\WebAPI\OData\OnlineAuthMiddleware;
+use SurveyGizmo\Dynamics\WebAPI\OData\OnlineSettings;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 

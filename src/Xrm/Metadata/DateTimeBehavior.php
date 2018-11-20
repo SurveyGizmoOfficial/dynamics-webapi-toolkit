@@ -18,7 +18,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
 /**
  * Specifies the behavior of a DateTimeAttributeMetadata attribute using the DateTimeBehavior property.

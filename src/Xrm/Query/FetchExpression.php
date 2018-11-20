@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm\Query;
+namespace SurveyGizmo\Dynamics\Xrm\Query;
 
 /**
  * Contains a query expressed in FetchXML.

@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
 /**
  * InaccessibleMetadataException is thrown when Web API OData service metadata is requested

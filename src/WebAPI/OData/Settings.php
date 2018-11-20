@@ -19,9 +19,9 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
-use AlexaCRM\Cache\NullAdapter;
+use SurveyGizmo\Dynamics\Cache\NullAdapter;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;

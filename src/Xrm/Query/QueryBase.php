@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm\Query;
+namespace SurveyGizmo\Dynamics\Xrm\Query;
 
 /**
  * Represents the abstract base class for constructing a query.

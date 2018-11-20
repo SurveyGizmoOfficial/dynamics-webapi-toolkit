@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
 /**
  * Specifies the attributes for which non-null values are returned from a query.

@@ -1,6 +1,6 @@
 {
   "name": "surveygizmo/dynamics-webapi-toolkit",
-  "description": "Web API toolkit for Microsoft Dynamics 365 and Dynamics CRM",
+  "description": "Web API toolkit for Microsoft Dynamics 365 and Dynamics CRM (with PHP 5.6 support)",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AlexaCRM\\": "src/"
+      "SurveyGizmo\\Dynamics\\": "src/"
     }
   }
 }

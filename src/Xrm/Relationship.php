@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
 /**
  * Represents a relationship between two entities.

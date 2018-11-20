@@ -18,14 +18,14 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
-use AlexaCRM\Cache\NullAdapter;
-use AlexaCRM\WebAPI\Client as WebAPIClient;
-use AlexaCRM\WebAPI\OData\Annotation;
-use AlexaCRM\WebAPI\OData\Client;
-use AlexaCRM\WebAPI\OData\ODataException;
-use AlexaCRM\Xrm\Metadata\EntityMetadata;
+use SurveyGizmo\Dynamics\Cache\NullAdapter;
+use SurveyGizmo\Dynamics\WebAPI\Client as WebAPIClient;
+use SurveyGizmo\Dynamics\WebAPI\OData\Annotation;
+use SurveyGizmo\Dynamics\WebAPI\OData\Client;
+use SurveyGizmo\Dynamics\WebAPI\OData\ODataException;
+use SurveyGizmo\Dynamics\Xrm\Metadata\EntityMetadata;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**
@@ -53,7 +53,7 @@ class MetadataRegistry {
     /**
      * MetadataRegistry constructor.
      *
-     * @param \AlexaCRM\WebAPI\Client $client
+     * @param \SurveyGizmo\Dynamics\WebAPI\Client $client
      */
     public function __construct( WebAPIClient $client ) {
         $this->client = $client->getClient();

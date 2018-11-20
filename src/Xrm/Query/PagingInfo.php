@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Xrm\Query;
+namespace SurveyGizmo\Dynamics\Xrm\Query;
 
 /**
  * Specifies a number of pages and a number of entity instances per page to return from the query.

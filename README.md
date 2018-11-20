@@ -41,13 +41,13 @@ ini_set('display_errors', 1);
 
 require_once 'vendor/autoload.php';
 
-$client = \AlexaCRM\WebAPI\ClientFactory::createOnlineClient(
+$client = \SurveyGizmo\Dynamics\WebAPI\ClientFactory::createOnlineClient(
     'https://example.crm.dynamics.com',
     '5abff56d-ffa4-42ca-bd21-91d11b5754ff',
     '3kffsdfIwwr23rj2r1397kwegewgJGtwi2wejgewitw='
 );
 
-$contact = new \AlexaCRM\Xrm\Entity( 'contact' );
+$contact = new \SurveyGizmo\Dynamics\Xrm\Entity( 'contact' );
 $contact['firstname'] = 'Nancy';
 $contact['lastname'] = 'Anderson';
 $contact['emailaddress1'] = 'someone_c@example.com';

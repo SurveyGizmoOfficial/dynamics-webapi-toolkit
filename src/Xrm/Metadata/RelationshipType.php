@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Enum\ChoiceEnum;
+use SurveyGizmo\Dynamics\Enum\ChoiceEnum;
 
 /**
  * Specifies the type of entity relationship.

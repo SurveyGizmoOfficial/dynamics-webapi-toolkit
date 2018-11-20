@@ -19,9 +19,9 @@
  *
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
-use AlexaCRM\Xrm\Query\QueryBase;
+use SurveyGizmo\Dynamics\Xrm\Query\QueryBase;
 
 /**
  * Describes how Dynamics 365 is accessed.

@@ -18,10 +18,10 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
-use AlexaCRM\WebAPI\Serializer\Reference;
-use AlexaCRM\Xrm\Metadata\EntityMetadata;
+use SurveyGizmo\Dynamics\WebAPI\Serializer\Reference;
+use SurveyGizmo\Dynamics\Xrm\Metadata\EntityMetadata;
 use Elao\Enum\EnumInterface;
 
 /**

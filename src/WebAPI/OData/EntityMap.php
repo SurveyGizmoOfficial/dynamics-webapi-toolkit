@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI\OData;
+namespace SurveyGizmo\Dynamics\WebAPI\OData;
 
 /**
  * Represents an OData EntityType, including its key, type hierarchy,
@@ -63,8 +63,8 @@ class EntityMap {
      *
      * @var array
      *
-     * @see \AlexaCRM\WebAPI\Client::Retrieve() Used for entity unmarshalling and ColumnSet marshalling.
-     * @see \AlexaCRM\WebAPI\Client::RetrieveMultiple() Used for entity unmarshalling.
+     * @see \SurveyGizmo\Dynamics\WebAPI\Client::Retrieve() Used for entity unmarshalling and ColumnSet marshalling.
+     * @see \SurveyGizmo\Dynamics\WebAPI\Client::RetrieveMultiple() Used for entity unmarshalling.
      */
     public $inboundMap = [];
 

@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm\Metadata;
+namespace SurveyGizmo\Dynamics\Xrm\Metadata;
 
-use AlexaCRM\Xrm\ManagedProperty;
+use SurveyGizmo\Dynamics\Xrm\ManagedProperty;
 
 /**
  * Contains the metadata for an entity relationship.

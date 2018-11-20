@@ -18,9 +18,9 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AlexaCRM\Xrm;
+namespace SurveyGizmo\Dynamics\Xrm;
 
-use AlexaCRM\Xrm\Metadata\MetadataBase;
+use SurveyGizmo\Dynamics\Xrm\Metadata\MetadataBase;
 
 /**
  * Contains a localized label, including the label string and the language code.

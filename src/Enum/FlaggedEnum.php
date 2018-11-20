@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\Enum;
+namespace SurveyGizmo\Dynamics\Enum;
 
 use Elao\Enum\AutoDiscoveredValuesTrait;
 

@@ -19,7 +19,7 @@
  *
  */
 
-namespace AlexaCRM\WebAPI;
+namespace SurveyGizmo\Dynamics\WebAPI;
 
 /**
  * Represents a generic Web API exception.
