@@ -85,7 +85,7 @@ class Entity implements \ArrayAccess {
      * @param string|KeyAttributeCollection $entityId Record ID, KeyAttributeCollection, or key name
      * @param mixed $keyValue Key value
      */
-    public function __construct( string $entityName = null, $entityId = null, $keyValue = null ) {
+    public function __construct($entityName = null, $entityId = null, $keyValue = null) {
         $this->attributeState = new AttributeState();
 
         if ( $entityName === null ) {
@@ -123,7 +123,7 @@ class Entity implements \ArrayAccess {
      *
      * @return bool
      */
-    public function Contains( string $attribute ) {
+    public function Contains($attribute) {
         return array_key_exists( $attribute, $this->Attributes );
     }
 
@@ -136,7 +136,7 @@ class Entity implements \ArrayAccess {
      *
      * @return mixed|null
      */
-    public function GetAttributeValue( string $attribute ) {
+    public function GetAttributeValue($attribute) {
         if ( !$this->Contains( $attribute ) ) {
             return null;
         }
@@ -153,7 +153,7 @@ class Entity implements \ArrayAccess {
      *
      * @return string
      */
-    public function GetFormattedAttributeValue( string $attribute ) {
+    public function GetFormattedAttributeValue($attribute) {
         if ( !array_key_exists( $attribute, $this->FormattedValues ) ) {
             return '';
         }
@@ -167,7 +167,7 @@ class Entity implements \ArrayAccess {
      * @param string $attribute
      * @param $value
      */
-    public function SetAttributeValue( string $attribute, $value ) {
+    public function SetAttributeValue($attribute, $value) {
         $this->Attributes[$attribute] = $value;
         $this->attributeState[$attribute] = true;
     }
@@ -202,7 +202,7 @@ class Entity implements \ArrayAccess {
      *
      * @return boolean true on success or false on failure.
      */
-    public function offsetExists( $offset ) {
+    public function offsetExists($offset) {
         return $this->Contains( $offset );
     }
 
@@ -213,7 +213,7 @@ class Entity implements \ArrayAccess {
      *
      * @return mixed Can return all value types.
      */
-    public function offsetGet( $offset ) {
+    public function offsetGet($offset) {
         return $this->GetAttributeValue( $offset );
     }
 
@@ -225,7 +225,7 @@ class Entity implements \ArrayAccess {
      *
      * @return void
      */
-    public function offsetSet( $offset, $value ) {
+    public function offsetSet($offset, $value) {
         $this->SetAttributeValue( $offset, $value );
     }
 

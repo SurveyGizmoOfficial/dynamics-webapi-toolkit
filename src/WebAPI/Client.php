@@ -72,7 +72,7 @@ class Client implements IOrganizationService {
      * @throws InaccessibleMetadataException
      * @throws EntityNotSupportedException
      */
-    public function Associate( string $entityName, $entityId, Relationship $relationship, array $relatedEntities ) {
+    public function Associate($entityName, $entityId, $relationship, $relatedEntities) {
         $metadata = $this->client->getMetadata();
         $collectionName = $metadata->getEntitySetName( $entityName );
 
@@ -99,7 +99,7 @@ class Client implements IOrganizationService {
      * @throws InaccessibleMetadataException
      * @throws EntityNotSupportedException
      */
-    public function Create( Entity $entity ) {
+    public function Create($entity) {
         $serializer = new SerializationHelper( $this->client );
         $translatedData = $serializer->serializeEntity( $entity );
 
@@ -128,7 +128,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    public function Delete( string $entityName, $entityId ) {
+    public function Delete($entityName, $entityId) {
         $metadata = $this->client->getMetadata();
         $collectionName = $metadata->getEntitySetName( $entityName );
 
@@ -153,7 +153,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    public function Disassociate( string $entityName, $entityId, Relationship $relationship, array $relatedEntities ) {
+    public function Disassociate($entityName, $entityId, $relationship, $relatedEntities) {
         $metadata = $this->client->getMetadata();
         $collectionName = $metadata->getEntitySetName( $entityName );
 
@@ -177,7 +177,7 @@ class Client implements IOrganizationService {
      *
      * @param $request
      */
-    public function Execute( $request ) {
+    public function Execute($request) {
         throw new \BadMethodCallException( 'Execute request not implemented' );
     }
 
@@ -194,7 +194,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    public function Retrieve( string $entityName, $entityId, ColumnSet $columnSet ) : Entity {
+    public function Retrieve($entityName, $entityId, $columnSet) {
         $metadata = $this->client->getMetadata();
         $collectionName = $metadata->getEntitySetName( $entityName );
         $entityMap = $metadata->getEntityMap( $entityName );
@@ -241,7 +241,7 @@ class Client implements IOrganizationService {
      * @throws InaccessibleMetadataException
      * @throws Exception
      */
-    public function RetrieveMultiple( QueryBase $query ) {
+    public function RetrieveMultiple($query) {
         if ( $query instanceof FetchExpression ) {
             return $this->retrieveViaFetchXML( $query );
         } elseif ( $query instanceof QueryByAttribute ) {
@@ -262,7 +262,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    public function Update( Entity $entity ) {
+    public function Update($entity) {
         $serializer = new SerializationHelper( $this->client );
         $translatedData = $serializer->serializeEntity( $entity );
 
@@ -282,7 +282,7 @@ class Client implements IOrganizationService {
      *
      * @return ODataClient
      */
-    public function getClient() : ODataClient {
+    public function getClient() {
         return $this->client;
     }
 
@@ -295,7 +295,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    protected function retrieveViaFetchXML( FetchExpression $query ) {
+    protected function retrieveViaFetchXML($query) {
         $fetchDOM = new \DOMDocument( '1.0', 'utf-8' );
         $fetchDOM->loadXML( $query->Query );
 
@@ -368,7 +368,7 @@ class Client implements IOrganizationService {
      * @throws EntityNotSupportedException
      * @throws Exception
      */
-    protected function retrieveViaQueryByAttribute( QueryByAttribute $query ) {
+    protected function retrieveViaQueryByAttribute($query) {
         $metadata = $this->client->getMetadata();
         $entityMap = $metadata->getEntityMap( $query->EntityName );
         $inboundMap = $entityMap->inboundMap;
@@ -493,14 +493,14 @@ class Client implements IOrganizationService {
     /**
      * @return CacheItemPoolInterface
      */
-    public function getCachePool() : CacheItemPoolInterface {
+    public function getCachePool() {
         return $this->client->getCachePool();
     }
 
     /**
      * @return LoggerInterface
      */
-    public function getLogger() : LoggerInterface {
+    public function getLogger() {
         return $this->client->getLogger();
     }
 

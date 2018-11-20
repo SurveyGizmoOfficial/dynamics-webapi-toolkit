@@ -38,7 +38,7 @@ interface IOrganizationService {
      *
      * @return void
      */
-    public function Associate( string $entityName, $entityId, Relationship $relationship, array $relatedEntities );
+    public function Associate($entityName, $entityId, $relationship, $relatedEntities);
 
     /**
      * Creates a record.
@@ -47,7 +47,7 @@ interface IOrganizationService {
      *
      * @return string ID of the new record.
      */
-    public function Create( Entity $entity );
+    public function Create($entity);
 
     /**
      * Deletes a record.
@@ -57,7 +57,7 @@ interface IOrganizationService {
      *
      * @return void
      */
-    public function Delete( string $entityName, $entityId );
+    public function Delete($entityName, $entityId);
 
     /**
      * Deletes a link between records.
@@ -69,7 +69,7 @@ interface IOrganizationService {
      *
      * @return void
      */
-    public function Disassociate( string $entityName, $entityId, Relationship $relationship, array $relatedEntities );
+    public function Disassociate($entityName, $entityId, $relationship, $relatedEntities);
 
     /**
      * Executes a function or action formed as a request.
@@ -78,7 +78,7 @@ interface IOrganizationService {
      *
      * @return mixed
      */
-    public function Execute( $request );
+    public function Execute($request);
 
     /**
      * Retrieves a record,
@@ -89,7 +89,7 @@ interface IOrganizationService {
      *
      * @return Entity
      */
-    public function Retrieve( string $entityName, $entityId, ColumnSet $columnSet ) : Entity;
+    public function Retrieve($entityName, $entityId,  $columnSet);
 
     /**
      * Retrieves a collection of records.
@@ -98,7 +98,7 @@ interface IOrganizationService {
      *
      * @return mixed
      */
-    public function RetrieveMultiple( QueryBase $query );
+    public function RetrieveMultiple($query);
 
     /**
      * Updates an existing record.
@@ -107,6 +107,6 @@ interface IOrganizationService {
      *
      * @return void
      */
-    public function Update( Entity $entity );
+    public function Update($entity);
 
 }

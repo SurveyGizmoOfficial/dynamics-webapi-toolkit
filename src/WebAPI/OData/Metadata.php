@@ -73,7 +73,7 @@ class Metadata {
      *
      * @return Metadata|null
      */
-    public static function createFromXML( $xml ) {
+    public static function createFromXML($xml) {
         $metadata = new Metadata();
 
         $dom = new \DOMDocument( '1.0', 'utf-8' );
@@ -184,7 +184,7 @@ class Metadata {
      * @return EntityMap
      * @throws EntityNotSupportedException
      */
-    public function getEntityMap( string $entityName ) {
+    public function getEntityMap($entityName) {
         if ( !array_key_exists( $entityName, $this->entityMaps ) ) {
             throw new EntityNotSupportedException( "Entity `{$entityName}` is not supported in Web API" );
         }
@@ -202,7 +202,7 @@ class Metadata {
      * @return string
      * @throws EntityNotSupportedException
      */
-    public function getEntitySetName( string $entityName ) {
+    public function getEntitySetName($entityName) {
         if ( !array_key_exists( $entityName, $this->entitySetMap ) ) {
             throw new EntityNotSupportedException( "Entity `{$entityName}` is not supported in Web API" );
         }
@@ -217,7 +217,7 @@ class Metadata {
      *
      * @return string
      */
-    public function stripNamespace( $typeName ) {
+    public function stripNamespace($typeName) {
         $typeName = str_replace( [ $this->namespace . '.', $this->alias . '.' ], '', $typeName );
 
         return $typeName;
